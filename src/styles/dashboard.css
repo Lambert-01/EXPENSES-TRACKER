@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dashboard-container {
+    @apply p-6 space-y-8;
+  }
+
+  .dashboard-inner {
+    @apply container mx-auto space-y-8;
+  }
+
+  .dashboard-header {
+    @apply mb-8;
+  }
+
+  .dashboard-title {
+    @apply text-3xl font-bold tracking-tight;
+  }
+
+  .dashboard-subtitle {
+    @apply text-muted-foreground;
+  }
+
+  .stat-card {
+    @apply p-6 space-y-2;
+  }
+
+  .stat-icon-container {
+    @apply p-2 rounded-lg;
+  }
+
+  .stat-icon {
+    @apply w-6 h-6;
+  }
+
+  .stat-label {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold;
+  }
+
+  .stat-blue {
+    @apply bg-blue-100 dark:bg-blue-900;
+  }
+
+  .stat-icon-blue {
+    @apply text-blue-600 dark:text-blue-400;
+  }
+
+  .stat-green {
+    @apply bg-green-100 dark:bg-green-900;
+  }
+
+  .stat-icon-green {
+    @apply text-green-600 dark:text-green-400;
+  }
+
+  .stat-red {
+    @apply bg-red-100 dark:bg-red-900;
+  }
+
+  .stat-icon-red {
+    @apply text-red-600 dark:text-red-400;
+  }
+
+  .stat-purple {
+    @apply bg-purple-100 dark:bg-purple-900;
+  }
+
+  .stat-icon-purple {
+    @apply text-purple-600 dark:text-purple-400;
+  }
+
+  .chart-card {
+    @apply p-6 space-y-4;
+  }
+
+  .chart-header {
+    @apply flex items-center justify-between space-x-4;
+  }
+
+  .chart-title-container {
+    @apply flex items-center space-x-4;
+  }
+
+  .chart-icon-container {
+    @apply p-2 rounded-lg;
+  }
+
+  .chart-icon {
+    @apply w-6 h-6;
+  }
+
+  .chart-title {
+    @apply text-xl font-semibold;
+  }
+
+  /* Button styles */
+  .primary-button {
+    @apply bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-200;
+  }
+
+  .outline-button {
+    @apply border-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200;
+  }
+
+  .ghost-button {
+    @apply hover:bg-gray-100 dark:hover:bg-gray-700;
+  }
+} 
